@@ -1,4 +1,6 @@
+  
 .nav {
+    z-index: 1;
     position: fixed;
     top: 50px;
     left: 10px;
@@ -11,6 +13,15 @@
     border-radius: 5px;
   }
   
+  @media screen and (max-width: 1090px) {
+    .nav {
+      left: initial;
+      top: initial;
+      bottom: 0px;
+      width: 100%;
+    }
+  }
+
   .nav a {
     text-decoration: none;
     color: #0008fc;
